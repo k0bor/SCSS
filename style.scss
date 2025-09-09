@@ -303,10 +303,7 @@ space-between;
     color: #636363;
 }
 
-&__li:last-child .breadcrumbs_link{
-    font-weight: 700;
-    color: $colorselectsite;
-}
+
 
     &_link{
     font-style: normal;
@@ -317,5 +314,10 @@ space-between;
 
  
 
+}
+
+&__li:last-child .breadcrumbs_link{
+    font-weight: 700;
+    color: $colorselectsite;
 }
 }
