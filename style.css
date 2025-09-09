@@ -246,6 +246,20 @@ body {
   color: #f16d7f;
 }
 
+.breadcrumbs__ul {
+  list-style-type: none;
+  display: flex;
+}
+.breadcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
 .breadcrumbs_link {
   font-style: normal;
   font-weight: 300;
@@ -253,7 +267,7 @@ body {
   line-height: 17px;
   color: #636363;
 }
-.breadcrumbs_link_site {
+.breadcrumbs_link__li:last-child .breadcrumbs_link {
   font-weight: 700;
   color: #f16d7f;
 }/*# sourceMappingURL=style.css.map */

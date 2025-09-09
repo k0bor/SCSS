@@ -285,16 +285,35 @@ space-between;
 }
 
 
-.breadcrumbs_link{
+.breadcrumbs{
+&__ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+&__li:not(:last-child)::after {
+    content: '/';
+    padding-left: 8px;
+    padding-right: 8px;
+     font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+    &_link{
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
 
-    &_site{
+ &__li:last-child .breadcrumbs_link{
     font-weight: 700;
     color: $colorselectsite;
 }
 
+}
 }
