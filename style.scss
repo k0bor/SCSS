@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-  font-family: 'lato',sans-serif ;
+
 }
 summary {
   display: block;
@@ -19,7 +19,7 @@ summary::-webkit-details-marker {
 
 
 body{
- font-family: 'lato',sans-serif ;
+ font-family: 'latoblack';
  text-decoration: none;
 }
 
@@ -77,10 +77,6 @@ gap: 16px;
     color: #6f6e6e;
 }
 }
-
-
-
-
 .filter-sort{
 height: 132px;
 display: flex;
@@ -88,6 +84,7 @@ padding-top: 39px;
 box-sizing: border-box;
 position: relative;
 gap: $gapGrid;
+
 }
 
 .filter{
@@ -97,7 +94,6 @@ gap: $gapGrid;
  position: relative;
  z-index: 10;
 
-
  &_content{
    background-color: #fff;
    padding: 0px 16px 16px;
@@ -106,7 +102,7 @@ gap: $gapGrid;
 
     &[open] {
         background: #FFFF;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
   
     &[open] .filter_heading {
@@ -166,10 +162,7 @@ color: $colorselectsite;
     }
 
 }
-%flex{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .product-box{
     @include  centerflex();
@@ -180,6 +173,10 @@ color: $colorselectsite;
 width: 360px;
 display: flex;
 flex-direction: column;
+
+
+
+ 
 
     &_content{
         background-color: #f8f8f8;
@@ -210,6 +207,7 @@ color: $textcolor;
 
     }
     &_text{
+          font-family: 'latolight';
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -227,11 +225,13 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: space-between;
 position: relative;
+
     
     &_left{
  display: flex;
  align-items: center;
  gap: 41px;
+ 
 }
 
 }
@@ -240,7 +240,6 @@ position: relative;
     position: absolute;
     left: -999999px;
     visibility: hidden;
-
  &:checked ~nav{
     right: -$widthBurgerMenu;
 }
@@ -272,12 +271,15 @@ align-items: center;
 justify-content: 
 space-between;
 
+
+
     &_heading{
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: $colorselectsite;
+    
 }
 
 }
