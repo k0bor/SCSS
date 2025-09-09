@@ -260,14 +260,14 @@ body {
   line-height: 17px;
   color: #636363;
 }
+.breadcrumbs__li:last-child .breadcrumbs_link {
+  font-weight: 700;
+  color: #f16d7f;
+}
 .breadcrumbs_link {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #636363;
-}
-.breadcrumbs_link__li:last-child .breadcrumbs_link {
-  font-weight: 700;
-  color: #f16d7f;
 }/*# sourceMappingURL=style.css.map */
